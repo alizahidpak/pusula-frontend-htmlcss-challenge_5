@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="/js/script.js"></script>
+  </head>
+  <body class="sticky">
+    <header class="header">
+      <div class="container header-container grid grid--header">
+        <a href="#" class="brand-logo">PBP</a>
+        <nav class="nav-bar">
+          <ul class="nav-bar-list">
+            <li><a href="#about" class="nav-bar-link">About</a></li>
+            <li><a href="#portfolio" class="nav-bar-link">Portfolio</a></li>
+            <li><a href="#blog" class="nav-bar-link">Blog</a></li>
+            <li><a href="#cta" class="nav-bar-link">Contact</a></li>
+            <li>
+              <a
+                href="#cta"
+                id="mobile-cta"
+                class="btn btn--outline header-cta-btn"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a href="#cta" class="btn btn--outline header-cta-btn">Contact</a>
+        <button class="btn-mobile-nav">
+          <i class="icon-mobile-nav las la-bars" name="menu-outline"></i>
+          <i class="icon-mobile-nav las la-times" name="close-outline"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="section-hero">
+        <div class="hero container grid">
+          <div class="hero-text-box">
+            <span class="subheading-hero">Personal Portfolio</span>
+            <h1 class="heading-primary">Design & Development</h1>
+            <p class="description-header">
+              The sky was cloudless and of a deep dark blue. The spectacle
+              before us was indeed sublime.
+            </p>
+            <div class="hero-links">
+              <a href="#about" class="btn btn--full margin-right-md">About</a>
+              <a href="#learn-more" class="btn btn--outline">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img src="images/hero.png" class="hero-img" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section-about">
+        <div class="about container grid grid--2-cols">
+          <div class="about-img-box">
+            <img src="images/about.png" class="about-img" alt="" />
+          </div>
+          <div class="about-text-box">
+            <span class="subheading">About</span>
+            <h2 class="heading-secondary">Passion, <br />Heart & Soul</h2>
+            <p class="description-primary">
+              Apparently we has reached a great height in the atmosphere, for
+              the sky was a dead black.
+            </p>
+            <p class="description-secondary">
+              By the same illusion which lifts the horizon of the sea to the
+              level of the spectator on a hillside, the sable cloud beneath was
+              dished out, and the car seemed to float.
+            </p>
+            <a href="#testimonials" class="btn btn--full">About</a>
+          </div>
+        </div>
+      </section>
+      <section id="service" class="section-service">
+        <div class="service container grid grid--2-cols">
+          <div class="service-text-box">
+            <span class="subheading">Service</span>
+            <h2 class="heading-secondary">
+              Professional for Business Solution
+            </h2>
+            <p class="description-primary">
+              Apparently we had reached a great height in the atmosphere, for
+              the sky was a dead black.
+            </p>
+            <ul class="service-list grid">
+              <li class="service-item">
+                <i class="service-icon las la-check"></i>
+                <span class="service-list-text">
+                  Highly configurable and easy to setup
+                </span>
+              </li>
+              <li class="service-item">
+                <i class="service-icon las la-check"></i>
+                <span class="service-list-text">
+                  Responsive and Mobile Friendly
+                </span>
+              </li>
+              <li class="service-item">
+                <i class="service-icon las la-check"></i>
+                <span class="service-list-text">Super Fast Customization</span>
+              </li>
+            </ul>
+            <a href="#service" class="btn btn--full">Service</a>
+          </div>
+          <div class="service-img-box">
+            <img src="./images/service.png" alt="" class="service-img" />
+          </div>
+        </div>
+      </section>
+      <section id="features" class="section-features">
+        <div class="features container grid">
+          <div class="header-features">
+            <span class="subheading">Features</span>
+            <h2 class="heading-secondary">
+              Awesome <br />
+              Customer Service
+            </h2>
+            <p class="description-primary">
+              Apparently we had reached a great height in the atmosphere, for
+              the sky was a dead black.
+            </p>
+          </div>
+          <ul class="features-list grid grid--3-cols">
+            <li class="features-item">
+              <img class="features-icon" src="/images/features-1.png" />
+              <h3 class="heading-tertiary">Design</h3>
+              <p class="description-secondary">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside.
+              </p>
+              <a href="#" class="features-link">Learn More</a>
+            </li>
+            <li class="features-item">
+              <img class="features-icon" src="/images/features-2.png" />
+              <h3 class="heading-tertiary">Prototype</h3>
+              <p class="description-secondary">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside.
+              </p>
+              <a href="#" class="features-link">Learn More</a>
+            </li>
+            <li class="features-item">
+              <img class="features-icon" src="/images/features-3.png" />
+              <h3 class="heading-tertiary">Develop</h3>
+              <p class="description-secondary">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside.
+              </p>
+              <a href="#" class="features-link">Learn More</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="portfolio" class="section-portfolio">
+        <div class="portfolio container grid">
+          <div class="header-portfolio">
+            <span class="subheading">Portfolio</span>
+            <h2 class="heading-secondary">Some of My Work</h2>
+            <p class="description-primary">
+              Apparently we had reached a great height in the atmosphere, for
+              the sky was a dead black.
+            </p>
+          </div>
+          <a href="#portfolio" class="btn btn--outline section-header-link">
+            Portfolio
+          </a>
+          <ul class="portfolio-list grid grid--3-cols">
+            <li class="portfolio-item">
+              <img
+                src="https://picsum.photos/300/300"
+                alt=""
+                class="portfolio-img"
+              />
+              <p class="portfolio-detail">
+                <span class="portfolio-title">App for iWatch</span>Development
+              </p>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="https://picsum.photos/300/300"
+                alt=""
+                class="portfolio-img"
+              />
+              <p class="portfolio-detail">
+                <span class="portfolio-title">Funny App</span>Design
+              </p>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="https://picsum.photos/300/300"
+                alt=""
+                class="portfolio-img"
+              />
+              <p class="portfolio-detail">
+                <span class="portfolio-title">Business App</span>Marketing
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="some-numbers" class="section-some-numbers">
+        <div class="some-numbers container grid">
+          <div class="header-some-numbers">
+            <span class="subheading">Some Numbers</span>
+            <h2 class="heading-secondary">Completed 420+ Projects Last Year</h2>
+          </div>
+          <ul class="some-numbers-list grid grid--3-cols">
+            <li class="some-numbers-item">
+              <img
+                src="/images/some-numbers-1.png"
+                alt=""
+                class="some-numbers-icon"
+              /><span class="some-numbers-number">123k</span>
+              <p class="description-secondary">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside.
+              </p>
+            </li>
+            <li class="some-numbers-item">
+              <img
+                src="/images/some-numbers-2.png"
+                alt=""
+                class="some-numbers-icon"
+              /><span class="some-numbers-number">45+</span>
+              <p class="description-secondary">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside.
+              </p>
+            </li>
+            <li class="some-numbers-item">
+              <img
+                src="/images/some-numbers-3.png"
+                alt=""
+                class="some-numbers-icon"
+              /><span class="some-numbers-number">67%</span>
+              <p class="description-secondary">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="testimonials" class="section-testimonials">
+        <div class="testimonials container grid">
+          <div class="testimonials-img-box">
+            <img
+              src="/images/testimonials.png"
+              alt=""
+              class="testimonials-img"
+            />
+          </div>
+          <div class="testimonials-text-box">
+            <span class="subheading">Testimonials</span>
+            <h2 class="heading-secondary">What's Client Say About Me</h2>
+            <div class="testimonial">
+              <blockquote class="description-primary">
+                "By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside, the sable cloud beneath
+                was dished out, and the car seemed to float in the middle."
+              </blockquote>
+              <div class="testimonial-person grid">
+                <img
+                  src="/images/testimonial-profile.png"
+                  alt=""
+                  class="testimonial-profile"
+                />
+                <span class="testimonial-name"> Nick Evans </span>
+                <span class="testimonial-job">Developer</span>
+              </div>
+              <a href="#" class="testimonial-nav-link margin-right-sm"
+                ><i class="las la-arrow-left testimonial-nav-link-icon"></i
+              ></a>
+              <a href="#" class="testimonial-nav-link"
+                ><i class="las la-arrow-right testimonial-nav-link-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service-main" class="section-service-main">
+        <div class="service-main container grid grid--2-cols">
+          <div class="service-main-text-box">
+            <span class="subheading">Service</span>
+            <h2 class="heading-secondary">24/7 Hour Online Supports</h2>
+            <p class="description-primary">
+              Apparently we had reached a great height in the atmosphere, for
+              the sky was a dead black.
+            </p>
+            <ul class="service-main-list grid grid--2-cols">
+              <li class="service-main-item">
+                <img
+                  src="/images/services-main1.png"
+                  alt=""
+                  class="service-main-icon"
+                /><span class="service-main-details"
+                  >Communication experience</span
+                >
+              </li>
+              <li class="service-main-item">
+                <img
+                  src="/images/services-main2.png"
+                  alt=""
+                  class="service-main-icon"
+                /><span class="service-main-details"
+                  >Best designing experience</span
+                >
+              </li>
+              <li class="service-main-item">
+                <img
+                  src="/images/services-main3.png"
+                  alt=""
+                  class="service-main-icon"
+                /><span class="service-main-details"
+                  >Trending tools and sizes</span
+                >
+              </li>
+              <li class="service-main-item">
+                <img
+                  src="/images/services-main4.png"
+                  alt=""
+                  class="service-main-icon"
+                /><span class="service-main-details"
+                  >Training and communication</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="service-main-img-box">
+            <img
+              src="/images/service-main.png"
+              alt=""
+              class="service-main-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="section-faq">
+        <div class="container-faq">
+          <div class="header-faq">
+            <span class="subheading">F.A.Q</span>
+            <h2 class="heading-secondary">Frequently Ask Questions</h2>
+          </div>
+          <ul class="questions-list grid">
+            <li class="questions-item">
+              <strong class="question">Sky was cloudless</strong>
+              <button class="collapse-expand">
+                <i class="las la-angle-down"></i>
+              </button>
+              <p class="answer">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside, the sable cloud beneath
+                was dished out, and the car seemed to float.
+              </p>
+            </li>
+            <li class="questions-item">
+              <strong class="question">Spectacle before us was indeed</strong>
+              <button class="collapse-expand">
+                <i class="las la-angle-down"></i>
+              </button>
+              <p class="answer">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside, the sable cloud beneath
+                was dished out, and the car seemed to float.
+              </p>
+            </li>
+            <li class="questions-item">
+              <strong class="question">Came the night of the first</strong>
+              <button class="collapse-expand">
+                <i class="las la-angle-down"></i>
+              </button>
+              <p class="answer">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside, the sable cloud beneath
+                was dished out, and the car seemed to float.
+              </p>
+            </li>
+            <li class="questions-item">
+              <strong class="question">Their equipment and instruments</strong>
+              <button class="collapse-expand">
+                <i class="las la-angle-down"></i>
+              </button>
+              <p class="answer">
+                By the same illusion which lifts the horizon of the sea to the
+                level of the spectator on a hillside, the sable cloud beneath
+                was dished out, and the car seemed to float.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="blog" class="section-blog">
+        <div class="blog container grid">
+          <div class="header-blog">
+            <span class="subheading">My Blog</span>
+            <h2 class="heading-secondary">My Personal Articles</h2>
+            <p class="description-primary">
+              Apparently we had reached a great height in the atmosphere, for
+              the sky was a dead black.
+            </p>
+          </div>
+          <a href="#blog" class="btn btn--outline section-header-link">
+            Blog
+          </a>
+          <ul class="blog-list grid grid--3-cols">
+            <li class="blog-item">
+              <a href="#" class="blog-link">
+                <img
+                  src="https://picsum.photos/500/350"
+                  alt=""
+                  class="blog-img"
+                />
+                <span class="blog-post-date">Jan 12, 2020</span>
+              </a>
+              <a href="#" class="blog-link">
+                <h3 class="heading-tertiary">Red flare silhoutted</h3>
+                <p class="description-secondary">
+                  By the same illusion which lifts the horizon of the sea to the
+                  level of the spectator
+                </p>
+              </a>
+            </li>
+            <li class="blog-item">
+              <a href="#" class="blog-link">
+                <img
+                  src="https://picsum.photos/500/350"
+                  alt=""
+                  class="blog-img"
+                />
+                <span class="blog-post-date">Jan 11, 2020</span>
+              </a>
+              <a href="#" class="blog-link">
+                <h3 class="heading-tertiary">Watched the storm</h3>
+                <p class="description-secondary">
+                  By the same illusion which lifts the horizon of the sea to the
+                  level of the spectator
+                </p>
+              </a>
+            </li>
+            <li class="blog-item">
+              <a href="#" class="blog-link">
+                <img
+                  src="https://picsum.photos/500/350"
+                  alt=""
+                  class="blog-img"
+                />
+                <span class="blog-post-date">Jan 10, 2020</span>
+              </a>
+              <a href="#" class="blog-link">
+                <h3 class="heading-tertiary">Shining crescent far beneath</h3>
+                <p class="description-secondary">
+                  By the same illusion which lifts the horizon of the sea to the
+                  level of the spectator
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="cta" class="section-cta">
+        <div class="cta container">
+          <h2 class="heading-secondary">Contact If You Have Any Projects?</h2>
+          <p class="description-primary">
+            Apparently we had reached a great height in the atmosphere
+          </p>
+          <a href="#cta" class="btn btn--full margin-right-md">Contact</a>
+          <a href="#about" class="btn btn--outline">About</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-nav container grid grid--3-cols">
+        <a href="#" class="brand-logo">PBP</a>
+        <span class="subheading">Menu</span>
+        <span class="subheading">Subscribe</span>
+        <div class="brand-col grid">
+          <a href="tel:+123456789012" class="phone-link">+1 (2345) 678-90-12</a>
+          <a href="mailto:support@personal.com " class="email-link"
+            >support@personal.com</a
+          >
+        </div>
+        <div class="footer-menu-col">
+          <ul class="footer-menu-list grid grid--2-cols">
+            <li><a href="#about" class="footer-menu-link">About</a></li>
+            <li><a href="#blog" class="footer-menu-link">Blog</a></li>
+            <li><a href="#portfolio" class="footer-menu-link">Portfolio</a></li>
+            <li><a href="#contact" class="footer-menu-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="subscribe-col">
+          <form action="#" class="subscribe-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email"
+              placeholder="Your email"
+              required
+            />
+            <button class="btn btn--full">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-rest container grid">
+        <hr />
+        <ul class="social-links">
+          <li>
+            <a href="#" class="social-link">
+              <i class="lab la-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <i class="lab la-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <i class="lab la-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">&copy; 2020 Laaqiq. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
