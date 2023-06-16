@@ -1,29 +1,19 @@
 // ///////////////////////////////////////////////////////////
 // // Sticky navigation
 
-const sectionHeroEl = document.querySelector('.section-hero');
+const about = document.querySelector('.section-about');
+const nav = document.querySelector('.header');
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
+function handleNavbarVisibility() {
+  const isHeroVisible = window.scrollY <= about.offsetHeight + nav.offsetHeight;
+  const isNavVisible = window.scrollY <= nav.offsetHeight;
 
-    if (ent.isIntersecting === false) {
-      document.body.classList.add('sticky');
-    }
+  document.body.classList.toggle('sticky', !isNavVisible);
+  document.body.style.paddingTop = isNavVisible ? 0 : `${nav.offsetHeight}px`;
+  nav.style.top = isHeroVisible ? `-${nav.offsetHeight}px` : '0';
+}
 
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove('sticky');
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: '-112px',
-  }
-);
-obs.observe(sectionHeroEl);
+window.addEventListener('scroll', handleNavbarVisibility);
 
 // ///////////////////////////////////////////////////////////
 // // Make mobile navigation work
@@ -78,7 +68,7 @@ allLinks.forEach(function (link) {
     }
 
     // Close mobile naviagtion
-    if (link.classList.contains('nav-bar-link'))
-      headerEl.classList.toggle('nav-open');
+    if (link.classList.contains('nav-bar-link')) headerEl.classList.toggle('nav-open');
   });
 });
+function calculateDaysBetweenDates(begin, end) {}
