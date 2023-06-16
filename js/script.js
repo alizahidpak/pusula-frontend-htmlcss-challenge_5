@@ -30,17 +30,13 @@ btnNavEl.addEventListener('click', function () {
 
 const btnFaqEl = document.getElementsByClassName('collapse-expand');
 
-for (let i = 0; i < btnFaqEl.length; i++) {
-  btnFaqEl[i].addEventListener('click', function () {
+for (const btn of btnFaqEl) {
+  btn.addEventListener('click', function () {
     const icon = this.querySelector('i');
     icon.classList.toggle('icon-collapse');
     this.classList.toggle('expanded');
     const answer = this.nextElementSibling;
-    if (answer.style.maxHeight) {
-      answer.style.maxHeight = null;
-    } else {
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-    }
+    answer.style.maxHeight = answer.style.maxHeight ? null : `${answer.scrollHeight}px`;
   });
 }
 
@@ -49,26 +45,20 @@ for (let i = 0; i < btnFaqEl.length; i++) {
 
 const allLinks = document.querySelectorAll('a:link');
 
-allLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
+allLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
     e.preventDefault();
     const href = link.getAttribute('href');
 
-    // Scroll back to top
-    if (href === '#')
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-
-    // Scroll to other links
-    if (href !== '#' && href.startsWith('#')) {
+    if (href === '#') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (href.startsWith('#')) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Close mobile naviagtion
-    if (link.classList.contains('nav-bar-link')) headerEl.classList.toggle('nav-open');
+    if (link.classList.contains('nav-bar-link')) {
+      headerEl.classList.toggle('nav-open');
+    }
   });
 });
-function calculateDaysBetweenDates(begin, end) {}
