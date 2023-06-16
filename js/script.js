@@ -5,7 +5,7 @@ const about = document.querySelector('.section-about');
 const nav = document.querySelector('.header');
 
 function handleNavbarVisibility() {
-  const isHeroVisible = window.scrollY <= about.offsetHeight + nav.offsetHeight;
+  const isHeroVisible = window.scrollY <= about.offsetTop - nav.offsetHeight;
   const isNavVisible = window.scrollY <= nav.offsetHeight;
 
   document.body.classList.toggle('sticky', !isNavVisible);
